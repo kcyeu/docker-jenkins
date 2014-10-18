@@ -1,4 +1,4 @@
-FROM kcyeu/ubuntu-general:latest
+FROM kcyeu/ubuntu:latest
 MAINTAINER Kuo-Cheng Yeu <kmd@mikuru.tw>
 
 RUN apt-get -qq update && apt-get -qqy install \ 
