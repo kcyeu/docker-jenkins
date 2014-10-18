@@ -1,4 +1,4 @@
-# jenkins
+# docker-jenkins
 
 Dockerized Jenkins CI.
 
