@@ -7,7 +7,7 @@ RUN apt-get -qq update && apt-get -qqy install \
 RUN mkdir -p /var/docker-data1/jenkins
 ENV JENKINS_HOME /var/docker-data1/jenkins
 
-ADD http://mirrors.jenkins-ci.org/war/1.585/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/1.587/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
