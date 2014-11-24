@@ -4,7 +4,8 @@ MAINTAINER Kuo-Cheng Yeu <kmd@mikuru.tw>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && apt-get -qqy install \ 
-    openjdk-7-jre-headless
+    openjdk-7-jre-headless \
+&& rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/docker-data1/jenkins
 ENV JENKINS_HOME /var/docker-data1/jenkins
