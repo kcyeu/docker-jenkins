@@ -28,12 +28,12 @@
       </header>
       <section>
         <h1>
-<a name="docker-jenkins" class="anchor" href="#docker-jenkins"><span class="octicon octicon-link"></span></a>docker-jenkins</h1>
+<a id="docker-jenkins" class="anchor" href="#docker-jenkins" aria-hidden="true"><span class="octicon octicon-link"></span></a>docker-jenkins</h1>
 
 <p>Dockerized Jenkins CI.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>By default, JENKINS_HOME is set to <code>/var/docker-data1/jenkins</code>.</p>
 
@@ -44,7 +44,7 @@
 
 <p>To mount a directory from your own host into a container.</p>
 
-<pre><code>sudo docker run -d -p 8080:8080 --name jenkins -v /var/jenkins:/var/docker-data1/jenkins kcyeu/jenkins
+<pre><code>sudo docker run -d -p 8080:8080 --name jenkins -v /var/docker-data1/jenkins:/var/docker-data1/jenkins kcyeu/jenkins
 </code></pre>
       </section>
     </div>
