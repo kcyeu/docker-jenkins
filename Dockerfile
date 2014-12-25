@@ -9,7 +9,7 @@ RUN apt-get -qq update && apt-get -qqy install \
 
 RUN mkdir -p /var/docker-data1/jenkins
 ENV JENKINS_HOME /var/docker-data1/jenkins
-ENV JENKINS_VER 1.588
+ENV JENKINS_VER 1.595
 
 ADD http://mirrors.jenkins-ci.org/war/${JENKINS_VER}/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
