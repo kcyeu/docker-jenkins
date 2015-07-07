@@ -11,7 +11,7 @@ RUN apt-get -qq update && apt-get -qqy install \
 
 RUN mkdir -p /var/docker-data1/jenkins
 ENV JENKINS_HOME /var/docker-data1/jenkins
-ENV JENKINS_VER 1.618
+ENV JENKINS_VER 1.619
 
 # Latest see http://mirrors.jenkins-ci.org/war/?C=N;O=D
 ADD http://mirrors.jenkins-ci.org/war/${JENKINS_VER}/jenkins.war /opt/jenkins.war
