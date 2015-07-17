@@ -12,10 +12,14 @@ RUN apt-get -qq update && apt-get -qqy install \
 RUN mkdir -p /var/docker-data1/jenkins
 ENV JENKINS_HOME /var/docker-data1/jenkins
 ENV JENKINS_VER 1.620
+ENV DOCKER_COMPOSE_VER 1.3.2
 
 # Latest see http://mirrors.jenkins-ci.org/war/?C=N;O=D
 ADD http://mirrors.jenkins-ci.org/war/${JENKINS_VER}/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
+
+ADD https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VER}/docker-compose-`uname -s`-`uname -m` /usr/local/bin/docker-compose
+RUN chmod +x /usr/local/bin/docker-compose
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
