@@ -1,7 +1,6 @@
 # docker-jenkins
 
-![Jenkins 1.621](https://img.shields.io/badge/jenkins-1.621-brightgreen.svg)
-![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Jenkins 1.626](https://img.shields.io/badge/jenkins-1.626-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Dockerized Jenkins CI.
 
